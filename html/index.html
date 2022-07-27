@@ -8,7 +8,7 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         />
 
-        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/home.css" />
         <link
             rel="stylesheet"
             href="tablett.css"
@@ -24,12 +24,12 @@
     </head>
 
     <body>
-        <header style="background-color: red">
-            <h1>ohmyfood</h1>
+        <header>
+            <a href="index.html"><h1>ohmyfood</h1></a>
         </header>
-        <main style="background-color: rgb(213, 224, 50)">
-            <section style="background-color: rgb(130, 54, 201)">
-                <div id="location" style="background-color: rgb(57, 136, 96)">
+        <main>
+            <section>
+                <div id="location">
                     <label>
                         <i class="fa-solid fa-location-dot"></i
                         ><input
@@ -38,69 +38,52 @@
                             placeholder="Paris,Belleville"
                     /></label>
                 </div>
+                <div class="color">
+                    <h2 class="first-section-center h2-menu">
+                        Réservez le menu qui vous convient
+                    </h2>
+                    <p class="first-section-center p-menu">
+                        Découvrez les restaurants d'exception,séléctionnés par
+                        nos soins.
+                    </p>
 
-                <h2
-                    class="first-section-center"
-                    style="background-color: rgb(105, 92, 105)"
-                >
-                    Réservez le menu qui vous convient
-                </h2>
-                <p
-                    class="first-section-center"
-                    style="background-color: rgb(65, 76, 177)"
-                >
-                    Découvrez les restaurants d'exception,séléctionnés par nos
-                    soins.
-                </p>
-                <div
-                    class="first-section-center"
-                    style="background-color: rgb(178, 133, 207)"
-                >
-                    <p>Explorer nos restaurants</p>
+                    <button class="first-section-center btn">
+                        Explorer nos restaurants
+                    </button>
                 </div>
             </section>
-            <section style="background-color: rgb(107, 236, 20)">
-                <h3 style="background-color: rgb(109, 148, 112)">
-                    Fonctionnement
-                </h3>
+            <section class="padding-border">
+                <h3 id="h3-fonctionnement">Fonctionnement</h3>
 
-                <ul
-                    id="list-operation"
-                    style="background-color: rgb(45, 145, 86)"
-                >
-                    <li style="background-color: rgb(204, 125, 34)">
-                        <i class="fa-solid fa-mobile-screen-button"></i>
-                        <span>Choisissez un restaurant</span>
+                <ul id="list-operation">
+                    <li id="li-choose-restaurant">
+                        <i class="fa-solid fa-mobile-screen-button logo"></i>
+                        <span class="span-list">Choisissez un restaurant</span>
                     </li>
 
-                    <li style="background-color: rgb(187, 75, 75)">
-                        <i class="fas fa-list-ul"></i>
-                        <span>Composez vortre menu</span>
+                    <li id="li-menu">
+                        <i class="fas fa-list-ul logo"></i>
+                        <span class="span-list">Composez vortre menu</span>
                     </li>
 
-                    <li style="background-color: rgb(73, 41, 148)">
-                        <i class="fas fa-store"></i>
-                        <span>Dégustez au restaurants</span>
+                    <li id="eat-restaurant">
+                        <i class="fas fa-store logo"></i>
+                        <span class="span-list">Dégustez au restaurants</span>
                     </li>
                 </ul>
             </section>
-            <section
-                id="
-            restaurant-section"
-                style="background-color: rgb(49, 15, 141)"
-            >
-                <h3 style="background-color: rgb(20, 117, 88)">Restaurants</h3>
-                <div>
+            <section id="restaurant-section">
+                <h3>Restaurants</h3>
+                <div id="div-restaurant">
                     <a href="#">
-                        <figure style="background-color: rgb(105, 92, 105)">
+                        <figure class="after-new">
                             <img
+                                class="img"
                                 src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
                                 alt="Le restaurant La palette du goût"
                             />
 
-                            <figcaption
-                                style="background-color: rgb(192, 71, 71)"
-                            >
+                            <figcaption class="nouveau fig">
                                 <h4>La palette du goût</h4>
                                 <p>Ménilmontant</p>
                                 <div>
@@ -110,15 +93,14 @@
                         </figure>
                     </a>
                     <a href="#">
-                        <figure style="background-color: rgb(62, 150, 70)">
+                        <figure class="after-new">
                             <img
+                                class="img"
                                 src="/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
                                 alt="Le restaurant La note enchantée"
                             />
 
-                            <figcaption
-                                style="background-color: rgb(16, 79, 109)"
-                            >
+                            <figcaption class="nouveau fig">
                                 <h4>La note enchantée</h4>
                                 <p>Charonne</p>
                                 <div><i class="fa-solid fa-heart"></i></div>
@@ -126,15 +108,14 @@
                         </figure>
                     </a>
                     <a href="#">
-                        <figure style="background-color: rgb(136, 41, 136)">
+                        <figure>
                             <img
+                                class="img"
                                 src="/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
                                 alt="Le restaurant À la française"
                             />
 
-                            <figcaption
-                                style="background-color: rgb(106, 151, 165)"
-                            >
+                            <figcaption class="fig">
                                 <h4>À la française</h4>
                                 <p>Cité rouge</p>
                                 <div><i class="fa-solid fa-heart"></i></div>
@@ -142,15 +123,14 @@
                         </figure>
                     </a>
                     <a href="#">
-                        <figure style="background-color: rgb(105, 92, 105)">
+                        <figure>
                             <img
+                                class="img"
                                 src="/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
                                 alt="Le restaurant le délice des sens"
                             />
 
-                            <figcaption
-                                style="background-color: rgb(185, 109, 57)"
-                            >
+                            <figcaption class="fig">
                                 <h4>Le délice des sens</h4>
                                 <p>Foilie-Méricourt</p>
                                 <div><i class="fa-solid fa-heart"></i></div>
@@ -160,30 +140,27 @@
                 </div>
             </section>
         </main>
-        <footer style="background-color: rgb(40, 117, 153)">
-            <header
-                id="header-footer"
-                style="background-color: rgb(105, 92, 105)"
-            >
-                <h3>ohmyfood</h3>
-            </header>
+        <footer>
+            <a href="index.html"><h3 id="footer-h3">ohmyfood</h3></a>
 
-            <div style="background-color: rgb(196, 119, 48)">
-                <ul id="ul-footer">
-                    <li>
-                        <i class="fa-solid fa-utensils i-footer"></i>Proposer un
-                        restaurant
-                    </li>
+            <ul id="ul-footer">
+                <li>
+                    <i class="fa-solid fa-utensils i-footer"></i>Proposer un
+                    restaurant
+                </li>
 
-                    <li>
-                        <i class="fa-solid fa-handshake-angle i-footer"></i
-                        >Devenir partenaire
-                    </li>
+                <li>
+                    <i class="fa-solid fa-handshake-angle i-footer"></i>Devenir
+                    partenaire
+                </li>
 
-                    <li>Mentions légales</li>
-                    <li><a href="mailto:vitocrosa@gmail.com">Contact</a></li>
-                </ul>
-            </div>
+                <li>Mentions légales</li>
+                <li>
+                    <a id="footer-email" href="mailto:contact@ohmyfood.fr"
+                        >Contact</a
+                    >
+                </li>
+            </ul>
         </footer>
     </body>
 </html>

@@ -1,0 +1,14 @@
+%numero {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: #9356dc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    color: white;
+}

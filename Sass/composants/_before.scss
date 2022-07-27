@@ -1,0 +1,14 @@
+#li-choose-restaurant:before {
+    content: "1";
+    @extend %numero;
+}
+
+#li-menu::before {
+    content: "2";
+    @extend %numero;
+}
+
+#eat-restaurant::before {
+    content: "3";
+    @extend %numero;
+}

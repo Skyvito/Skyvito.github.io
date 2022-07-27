@@ -1,0 +1,9 @@
+.after-new::after {
+    content: "Nouveau";
+    position: absolute;
+    top: 7%;
+    right: 5%;
+    background-color: #99e2d0;
+    padding: 5px 10px;
+    color: #2a816b;
+}
