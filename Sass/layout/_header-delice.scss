@@ -1,0 +1,33 @@
+header {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+}
+
+#header-ohmyfood {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main header {
+    display: block;
+    margin: 0;
+    img {
+        width: 100%;
+        margin: 0;
+    }
+    #delice-des-sens {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin: 20px 0 15px;
+        h2 {
+            padding: 0 10px;
+        }
+        i {
+            position: absolute;
+            right: 10%;
+        }
+    }
+}

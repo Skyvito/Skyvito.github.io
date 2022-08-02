@@ -8,6 +8,8 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         />
 
+        <link rel="stylesheet" href="/css/delice.css" />
+
         <link
             rel="stylesheet"
             href="tablett.css"
@@ -23,168 +25,170 @@
     </head>
 
     <body>
-        <header style="background-color: rgb(105, 92, 105)">
-            <!-- manque 2 liens -->
-            <i class="fas fa-arrow-left"></i>
+        <header>
+            <a href="index.html"><i class="fas fa-arrow-left"></i></a>
 
-            <h1 style="background-color: rgb(24, 34, 56)">ohmyfood</h1>
+            <a id="header-ohmyfood" href="index.html"> <h1>ohmyfood</h1></a>
         </header>
+        <div>
+            <img
+                id="image-background"
+                src="/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                alt="Le restaurant le délice des sens"
+            />
+        </div>
 
         <main>
-            <header style="background-color: rgb(101, 103, 190)">
-                <img
-                    src="/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                    alt="Le restaurant le délice des sens"
-                />
+            <div id="background">
+                <header>
+                    <div id="delice-des-sens">
+                        <h2>Le délice des sens</h2>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </header>
 
-                <h2>Le délice des sens</h2>
-                <i class="fa-solid fa-heart"></i>
-            </header>
+                <section>
+                    <h3 id="titre-entrée">Entrées</h3>
 
-            <section style="background-color: rgb(138, 45, 138)">
-                <h3 style="background-color: rgb(105, 92, 105)">Entrées</h3>
+                    <ul id="ul-entrée">
+                        <li>
+                            <h4 class="h4-entrée">Tartare de thon</h4>
+                            <p class="description-entrée">Assaisonné au yuzu</p>
+                            <p class="prix-entrée">25€</p>
 
-                <ul style="background-color: rgb(27, 78, 53)">
-                    <li style="background-color: rgb(104, 52, 104)">
-                        <div>
-                            <h4>Tartare de thon</h4>
+                            <div class="validé">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </li>
 
-                            <p>Assaisonné au yuzu</p>
-                            <p>25€</p>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                    </li>
+                        <li>
+                            <h4 class="h4-entrée">
+                                Bouchée de homard croustilliant
+                            </h4>
 
-                    <li style="background-color: rgb(134, 108, 35)">
-                        <div>
-                            <h4>Bouchée de homard croustilliant</h4>
+                            <p class="description-entrée">
+                                Et sa farandole de petits légumes
+                            </p>
+                            <p class="prix-entrée">35€</p>
 
-                            <p>Et sa farandole de petits légumes</p>
-                            <p>35€</p>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                    </li>
+                            <div class="validé">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </li>
 
-                    <li style="background-color: rgb(177, 41, 41)">
-                        <div>
-                            <h4>Velouté de cèpes</h4>
+                        <li>
+                            <h4 class="h4-entrée">Velouté de cèpes</h4>
+                            <p class="description-entrée">Aux truffes</p>
+                            <p class="prix-entrée">20€</p>
 
-                            <p>Aux truffes</p>
-                            <p>20€</p>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-            <section style="background-color: rgb(95, 182, 55)">
-                <h3 style="background-color: rgb(105, 92, 105)">Plats</h3>
-                <ul style="background-color: rgb(60, 148, 126)">
-                    <li style="background-color: rgb(150, 115, 62)">
-                        <div>
-                            <h4>Poulet rôti aux herbes de provence</h4>
+                            <div class="validé">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h3 id="titre-plats">Plats</h3>
+                    <ul id="ul-plats">
+                        <li>
+                            <h4 class="h4-plats">
+                                Poulet rôti aux herbes de provence
+                            </h4>
+                            <p class="description-plats">
+                                et sa crème de truffe
+                            </p>
+                            <p class="prix-plats">40€</p>
 
-                            <p>et sa crème de truffe</p>
-                            <p>40€</p>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                    </li>
+                            <div class="validé">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </li>
 
-                    <li style="background-color: rgb(150, 84, 150)">
-                        <div>
-                            <h4>Langouste rôtie</h4>
+                        <li>
+                            <h4 class="h4-plats">Langouste rôtie</h4>
+                            <p class="description-plats">
+                                Et ses légumes de saison
+                            </p>
+                            <p class="prix-plats">35€</p>
 
-                            <p>Et ses légumes de saison</p>
-                            <p>35€</p>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                    </li>
+                            <div class="validé">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </li>
 
-                    <li style="background-color: rgb(151, 73, 86)">
-                        <div>
-                            <h4>Côte de boeuf angus</h4>
+                        <li>
+                            <h4 class="h4-plats">Côte de boeuf angus</h4>
+                            <p class="description-plats">
+                                Et sa ourée de panais
+                            </p>
+                            <p class="prix-plats">44€</p>
 
-                            <p>Et sa ourée de panais</p>
-                            <p>44€</p>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-            <section style="background-color: rgb(230, 178, 10)">
-                <h3 style="background-color: rgb(138, 120, 73)">Desserts</h3>
-                <ul style="background-color: rgb(24, 122, 85)">
-                    <li style="background-color: rgb(105, 92, 105)">
-                        <div>
-                            <h4>farandole de desserts</h4>
+                            <div class="validé">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h3 id="titre-dessert">Desserts</h3>
+                    <ul id="ul_dessert">
+                        <li>
+                            <h4 class="h4-dessert">farandole de desserts</h4>
 
-                            <p>Du chef</p>
-                            <p>18€</p>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                    </li>
-                    <li style="background-color: rgb(131, 10, 131)">
-                        <div>
-                            <h4>Crème brulée</h4>
+                            <p class="description-dessert">Du chef</p>
+                            <p class="prix-dessert">18€</p>
 
-                            <p>Revisitée</p>
-                            <p>22€</p>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                    </li>
-                    <li style="background-color: rgb(90, 104, 170)">
-                        <div>
-                            <h4>Tiramisu</h4>
+                            <div class="validé">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <h4 class="h4-dessert">Crème brulée</h4>
 
-                            <p>À la noisette</p>
-                            <p>23€</p>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-            <button style="background-color: rgb(151, 158, 55)">
-                Commander
-            </button>
+                            <p class="description-dessert">Revisitée</p>
+                            <p class="prix-dessert">22€</p>
+
+                            <div class="validé">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <h4 class="h4-dessert">Tiramisu</h4>
+
+                            <p class="description-dessert">À la noisette</p>
+                            <p class="prix-dessert">23€</p>
+
+                            <div class="validé">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <button class="btn2">Commander</button>
+            </div>
         </main>
 
-        <footer style="background-color: rgb(165, 55, 88)">
-            <header>
-                <h3 style="background-color: rgb(170, 97, 97)">ohmyfood</h3>
-            </header>
-            <div>
-                <ul style="background-color: rgb(50, 165, 69)">
-                    <li>
-                        <i class="fa-solid fa-utensils"></i>Proposer un
-                        restaurant
-                    </li>
+        <footer>
+            <a href="index.html"><h3 id="footer-h3">ohmyfood</h3></a>
 
-                    <li>
-                        <i class="fa-solid fa-handshake-angle"></i>Devenir
-                        partenaire
-                    </li>
+            <ul id="ul-footer">
+                <li>
+                    <i class="fa-solid fa-utensils i-footer"></i>Proposer un
+                    restaurant
+                </li>
 
-                    <li>Mentions légales</li>
-                    <li><a href="mailto:vitocrosa@gmail.com">Contact</a></li>
-                </ul>
-            </div>
+                <li>
+                    <i class="fa-solid fa-handshake-angle i-footer"></i>Devenir
+                    partenaire
+                </li>
+
+                <li>Mentions légales</li>
+                <li>
+                    <a id="footer-email" href="mailto:contact@ohmyfood.fr"
+                        >Contact</a
+                    >
+                </li>
+            </ul>
         </footer>
     </body>
 </html>
