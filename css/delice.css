@@ -33,6 +33,7 @@ main header #delice-des-sens h2 {
 main header #delice-des-sens i {
   position: absolute;
   right: 10%;
+  font-size: 23px;
 }
 
 body {
@@ -48,34 +49,31 @@ body {
 }
 
 ul#ul-entrée > li {
-  position: relative;
   box-shadow: 0 5px 7px 0 #c9bfbf;
   border-radius: 10px;
+  display: flex;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
 }
-
-.h4-entrée {
-  position: absolute;
-  top: 9%;
-  margin: 0;
-}
-
-.description-entrée {
-  position: absolute;
-  top: 42%;
-  margin: 0;
+ul#ul-entrée > li:hover {
+  transform: scale(1.01);
 }
 
 .prix-entrée {
   position: absolute;
-  right: 11%;
-  bottom: 29%;
+  right: 20px;
+  bottom: 10px;
   margin: 0;
 }
 
 .validé {
+  width: 60px;
+  height: 100%;
+  background-color: #b6f9bd;
+  display: none;
   position: absolute;
-  right: 3%;
-  bottom: 29%;
+  right: -100px;
 }
 
 #titre-entrée {
@@ -89,9 +87,7 @@ ul#ul-entrée > li {
   width: 41px;
   height: 4px;
   background: #6ee9cb;
-  position: absolute;
-  left: 6px;
-  bottom: -2px;
+  display: block;
 }
 
 #titre-plats {
@@ -109,27 +105,20 @@ ul#ul-entrée > li {
 }
 
 ul#ul-plats > li {
-  position: relative;
   box-shadow: 0 5px 7px 0 #c9bfbf;
   border-radius: 10px;
+  display: flex;
+  background-color: white;
+  overflow: hidden;
 }
-
-.h4-plats {
-  position: absolute;
-  top: 9%;
-  margin: 0;
-}
-
-.description-plats {
-  position: absolute;
-  top: 42%;
-  margin: 0;
+ul#ul-plats > li:hover {
+  transform: scale(1.01);
 }
 
 .prix-plats {
   position: absolute;
-  right: 11%;
-  bottom: 29%;
+  right: 20px;
+  bottom: 10px;
   margin: 0;
 }
 
@@ -144,9 +133,7 @@ ul#ul-plats > li {
   width: 41px;
   height: 4px;
   background: #6ee9cb;
-  position: absolute;
-  left: 6px;
-  bottom: -2px;
+  display: block;
 }
 
 #ul_dessert {
@@ -159,27 +146,20 @@ ul#ul-plats > li {
 }
 
 ul#ul_dessert > li {
-  position: relative;
   box-shadow: 0 5px 7px 0 #c9bfbf;
   border-radius: 10px;
+  display: flex;
+  background-color: white;
+  overflow: hidden;
 }
-
-.h4-dessert {
-  position: absolute;
-  top: 9%;
-  margin: 0;
-}
-
-.description-dessert {
-  position: absolute;
-  top: 42%;
-  margin: 0;
+ul#ul_dessert > li:hover {
+  transform: scale(1.01);
 }
 
 .prix-dessert {
   position: absolute;
-  right: 11%;
-  bottom: 29%;
+  right: 20px;
+  bottom: 10px;
   margin: 0;
 }
 
@@ -188,9 +168,7 @@ h3#titre-plats:after {
   width: 41px;
   height: 4px;
   background: #6ee9cb;
-  position: absolute;
-  left: 6px;
-  bottom: -2px;
+  display: block;
 }
 
 h1 {
@@ -203,6 +181,7 @@ h1 {
   background-color: rgb(251, 244, 244);
   border-radius: 20px 20px 0 0;
   padding-top: 16px;
+  padding-bottom: 40px;
 }
 
 main {
@@ -212,6 +191,44 @@ main {
 #image-background {
   height: 65vw;
   object-fit: cover;
+}
+
+@media screen and (max-width: 360px) {
+  .h4-entrée {
+    font-size: 14px;
+  }
+  .description-entrée {
+    font-size: 13px;
+  }
+  .prix-entrée {
+    font-size: 14px;
+  }
+  .h4-plats {
+    font-size: 14px;
+  }
+  .description-plats {
+    font-size: 13px;
+  }
+  .prix-plats {
+    font-size: 14px;
+  }
+  .h4-dessert {
+    font-size: 14px;
+  }
+  .description-dessert {
+    font-size: 13px;
+  }
+  .prix-dessert {
+    font-size: 14px;
+  }
+  .validé {
+    font-size: 14px;
+  }
+}
+.bloc {
+  position: relative;
+  width: 100%;
+  padding: 10px;
 }
 
 h2,
@@ -259,13 +276,12 @@ footer {
   padding: 0px 0 0 10px;
   color: white;
 }
+#ul-footer > li:hover {
+  cursor: pointer;
+}
 
 #footer-email {
   color: white;
-}
-
-footer {
-  margin-top: 40px;
 }
 
 /* Box sizing rules */
@@ -343,6 +359,171 @@ select {
   padding: 10px 40px;
   background: linear-gradient(1deg, #9356dc, #ff79da);
   cursor: pointer;
+  font-family: "Roboto", sans-serif;
+}
+.btn2:hover {
+  box-shadow: 0px 5px 20px 0px #a9aaaa;
+  opacity: 0.7;
+}
+
+#ul-entrée {
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#ul-plats {
+  animation: fadein 5s;
+}
+
+#ul_dessert {
+  animation: fadein 8s;
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+}
+#ul-entrée > li:hover .validé {
+  display: block;
+  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+#ul-entrée > li:hover .prix-entrée {
+  right: 71px;
+  transition-duration: 0.5s;
+}
+
+.fa-circle-check {
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
+}
+
+#ul-entrée > li:hover .fa-circle-check {
+  animation: rotate-center 0.6s ease-in-out both;
+}
+
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+#ul-plats > li:hover .validé {
+  display: block;
+  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+#ul-plats > li:hover .prix-plats {
+  right: 71px;
+  transition-duration: 0.5s;
+}
+
+#ul-plats > li:hover .fa-circle-check {
+  animation: rotate-center 0.6s ease-in-out both;
+}
+
+#ul_dessert > li:hover .validé {
+  display: block;
+  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+#ul_dessert > li:hover .prix-dessert {
+  right: 71px;
+  transition-duration: 0.5s;
+}
+
+#ul_dessert > li:hover .fa-circle-check {
+  animation: rotate-center 0.6s ease-in-out both;
+}
+
+.solid {
+  color: transparent;
+  background-image: linear-gradient(0deg, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 400ms ease-in-out;
+}
+
+/*#delice-des-sens:hover .solid {
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+#delice-des-sens:hover .regular {
+    transform: scale(1.3);
+    color: transparent;
+}
+
+.regular:hover {
+    /*color: transparent;*/
+.duo:hover .solid {
+  opacity: 1;
+  transform: scale(1.3);
+}
+
+.duo:hover .regular {
+  opacity: 0;
+}
+
+@media screen and (max-width: 382px) {
+  .trois-point {
+    text-overflow: ellipsis;
+    width: 195px;
+    overflow: hidden;
+  }
+  .bloc {
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .bloc:hover .trois-point {
+    padding-right: 5px;
+  }
+}
+@media only screen and (min-width: 1038px) and (max-width: 1150px) {
+  .bloc {
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .roti {
+    text-overflow: ellipsis;
+    width: 250px;
+    overflow: hidden;
+  }
+  .bloc:hover .roti {
+    padding-right: 16px;
+  }
 }
 
 /*# sourceMappingURL=delice.css.map */

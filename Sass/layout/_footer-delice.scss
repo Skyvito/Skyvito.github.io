@@ -26,12 +26,11 @@ footer {
 #ul-footer > li {
     padding: 0px 0 0 10px;
     color: white;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 #footer-email {
     color: white;
-}
-
-footer {
-    margin-top: 40px;
 }

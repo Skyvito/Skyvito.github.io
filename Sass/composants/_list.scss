@@ -11,7 +11,10 @@
         border-radius: 22px;
         box-shadow: 0 5px 7px 0 #c9bfbf;
         cursor: pointer;
-
+        &:hover {
+            box-shadow: 10px 5px 28px 7px #7c8687;
+            opacity: 0.7;
+        }
         span {
             padding: 20px;
         }
@@ -38,5 +41,9 @@
 }
 
 li#eat-restaurant {
-    background-color: #f5e4f0;
+    background-color: rgb(147, 86, 220, 0.1);
+}
+
+i.fas.fa-store.logo {
+    color: #9356dc;
 }

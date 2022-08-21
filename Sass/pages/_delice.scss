@@ -11,34 +11,31 @@ body {
 }
 
 ul#ul-entrée > li {
-    position: relative;
     box-shadow: 0 5px 7px 0 #c9bfbf;
     border-radius: 10px;
-}
-
-.h4-entrée {
-    position: absolute;
-    top: 9%;
-    margin: 0;
-}
-
-.description-entrée {
-    position: absolute;
-    top: 42%;
-    margin: 0;
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    &:hover {
+        transform: scale(1.01);
+    }
 }
 
 .prix-entrée {
     position: absolute;
-    right: 11%;
-    bottom: 29%;
+    right: 20px;
+    bottom: 10px;
     margin: 0;
 }
 
 .validé {
+    width: 60px;
+    height: 100%;
+    background-color: #b6f9bd;
+    display: none;
     position: absolute;
-    right: 3%;
-    bottom: 29%;
+    right: -100px;
 }
 
 #titre-entrée {
@@ -52,9 +49,7 @@ ul#ul-entrée > li {
     width: 41px;
     height: 4px;
     background: #6ee9cb;
-    position: absolute;
-    left: 6px;
-    bottom: -2px;
+    display: block;
 }
 
 #titre-plats {
@@ -72,27 +67,20 @@ ul#ul-entrée > li {
 }
 
 ul#ul-plats > li {
-    position: relative;
     box-shadow: 0 5px 7px 0 #c9bfbf;
     border-radius: 10px;
-}
-
-.h4-plats {
-    position: absolute;
-    top: 9%;
-    margin: 0;
-}
-
-.description-plats {
-    position: absolute;
-    top: 42%;
-    margin: 0;
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+    &:hover {
+        transform: scale(1.01);
+    }
 }
 
 .prix-plats {
     position: absolute;
-    right: 11%;
-    bottom: 29%;
+    right: 20px;
+    bottom: 10px;
     margin: 0;
 }
 
@@ -107,9 +95,7 @@ ul#ul-plats > li {
     width: 41px;
     height: 4px;
     background: #6ee9cb;
-    position: absolute;
-    left: 6px;
-    bottom: -2px;
+    display: block;
 }
 
 #ul_dessert {
@@ -122,27 +108,20 @@ ul#ul-plats > li {
 }
 
 ul#ul_dessert > li {
-    position: relative;
     box-shadow: 0 5px 7px 0 #c9bfbf;
     border-radius: 10px;
-}
-
-.h4-dessert {
-    position: absolute;
-    top: 9%;
-    margin: 0;
-}
-
-.description-dessert {
-    position: absolute;
-    top: 42%;
-    margin: 0;
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+    &:hover {
+        transform: scale(1.01);
+    }
 }
 
 .prix-dessert {
     position: absolute;
-    right: 11%;
-    bottom: 29%;
+    right: 20px;
+    bottom: 10px;
     margin: 0;
 }
 
@@ -151,9 +130,7 @@ h3#titre-plats:after {
     width: 41px;
     height: 4px;
     background: #6ee9cb;
-    position: absolute;
-    left: 6px;
-    bottom: -2px;
+    display: block;
 }
 
 h1 {
@@ -166,6 +143,7 @@ h1 {
     background-color: rgb(251 244 244);
     border-radius: 20px 20px 0 0;
     padding-top: 16px;
+    padding-bottom: 40px;
 }
 
 main {
@@ -175,4 +153,43 @@ main {
 #image-background {
     height: 65vw;
     object-fit: cover;
+}
+
+@media screen and (max-width: 360px) {
+    .h4-entrée {
+        font-size: 14px;
+    }
+    .description-entrée {
+        font-size: 13px;
+    }
+    .prix-entrée {
+        font-size: 14px;
+    }
+    .h4-plats {
+        font-size: 14px;
+    }
+    .description-plats {
+        font-size: 13px;
+    }
+    .prix-plats {
+        font-size: 14px;
+    }
+    .h4-dessert {
+        font-size: 14px;
+    }
+    .description-dessert {
+        font-size: 13px;
+    }
+    .prix-dessert {
+        font-size: 14px;
+    }
+    .validé {
+        font-size: 14px;
+    }
+}
+
+.bloc {
+    position: relative;
+    width: 100%;
+    padding: 10px;
 }

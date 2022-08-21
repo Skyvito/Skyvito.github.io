@@ -4,7 +4,7 @@
     "description": "Projet p3",
     "main": "index.js",
     "scripts": {
-        "sass": "sass --watch ./sass/home.scss:./css/home.css ./sass/delice.scss:./css/delice.css"
+        "sass": "sass --watch ./sass/home.scss:./css/home.css ./sass/delice.scss:./css/delice.css ./sass/tablett.scss:./css/tablett.css ./sass/desktop.scss:./css/desktop.css ./sass/tablett-restaurant.scss:./css/tablett-restaurant.css ./sass/desktop-restaurant.scss:./css/desktop-restaurant.css"
     },
     "repository": {
         "type": "git",

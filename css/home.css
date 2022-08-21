@@ -87,6 +87,7 @@ header {
   justify-content: center;
   width: 100%;
   box-shadow: 0 3px 7px 0 #c9bfbf;
+  position: relative;
 }
 header h1 {
   font-size: x-large;
@@ -152,6 +153,10 @@ footer {
   background: linear-gradient(1deg, #9356dc, #ff79da);
   cursor: pointer;
 }
+.btn:hover {
+  box-shadow: 0px 5px 20px 0px #a9aaaa;
+  opacity: 0.7;
+}
 
 .after-new::after {
   content: "Nouveau";
@@ -177,6 +182,7 @@ footer {
 
 #location {
   height: 40px;
+  background: #f3f3f3;
 }
 #location label {
   display: flex;
@@ -193,6 +199,7 @@ footer {
   margin: 0 6px;
   border: 0;
   width: 106px;
+  background: #f3f3f3;
 }
 
 input::placeholder {
@@ -213,6 +220,10 @@ input::placeholder {
   border-radius: 22px;
   box-shadow: 0 5px 7px 0 #c9bfbf;
   cursor: pointer;
+}
+#list-operation li:hover {
+  box-shadow: 10px 5px 28px 7px #7c8687;
+  opacity: 0.7;
 }
 #list-operation li span {
   padding: 20px;
@@ -237,7 +248,11 @@ input::placeholder {
   }
 }
 li#eat-restaurant {
-  background-color: #f5e4f0;
+  background-color: rgba(147, 86, 220, 0.1);
+}
+
+i.fas.fa-store.logo {
+  color: #9356dc;
 }
 
 #h3-fonctionnement {
@@ -251,6 +266,7 @@ li#eat-restaurant {
 .color {
   background-color: whitesmoke;
   padding: 30px 0 50px;
+  background-color: #fbfbfb;
 }
 
 .h2-menu {
@@ -275,6 +291,10 @@ h4 {
 #restaurant-section a > figure {
   margin: 0;
   height: 100%;
+}
+#restaurant-section a > figure:hover {
+  transform: scale(1.05);
+  transition: transform 450ms;
 }
 
 .img {
@@ -310,6 +330,137 @@ i.fa-regular.fa-heart {
 
 #restaurant-section h3 {
   padding: 10px 0;
+}
+
+.loader {
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border: 16px solid #bdc3c7;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  animation: chargeur 4s linear;
+  position: relative;
+}
+
+@keyframes chargeur {
+  0% {
+    transform: rotate(0deg) scale(1);
+    border-top-color: red;
+    border-bottom-color: red;
+  }
+  25% {
+    border-top-color: #9356dc;
+    border-bottom-color: #9356dc;
+  }
+  50% {
+    transform: rotate(360deg) scale(1.15);
+    border-top-color: #ff79da;
+    border-bottom-color: #ff79da;
+  }
+  75% {
+    border-top-color: #99e2d0;
+    border-bottom-color: #99e2d0;
+  }
+  100% {
+    transform: rotate(720deg) scale(0);
+    border-top-color: red;
+    border-bottom-color: red;
+  }
+}
+.test {
+  /*width: 100%;
+  height: 100%;
+  backdrop-filter: blur(15px);
+  background-color: white;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  text-indent: -9999em;
+  top: 0px;
+  left: 0px;*/
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  background: black;
+  animation: loader 4s linear forwards;
+}
+
+.fondu-out {
+  opacity: 0;
+  transition: opacity 4s ease-out;
+}
+
+@keyframes loader {
+  99.99% {
+    height: 100%;
+    width: 100%;
+  }
+  100% {
+    height: 0%;
+    width: 0%;
+  }
+}
+.nouveau.fig > div > i {
+  font-size: 23px;
+  position: absolute;
+  top: 30%;
+  left: 90%;
+}
+
+.solid {
+  color: transparent;
+  background-image: linear-gradient(0deg, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 400ms ease-in-out;
+}
+
+.nouveau:hover .solid {
+  /* opacity: 1;
+      transform: scale(1.3);
+  }
+
+  .nouveau:hover .regular {
+      opacity: 1;
+      transform: scale(1.3);*/
+}
+
+/*
+i.fa-regular.fa-heart.regular:hover {
+    color: transparent;
+}*/
+.fig > div > i {
+  position: absolute;
+  top: 30%;
+  left: 90%;
+  font-size: 23px;
+}
+
+/*.fig:hover .solid {
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+.fig:hover .regular {
+    opacity: 1;
+    transform: scale(1.3);
+}*/
+.duo:hover .solid {
+  opacity: 1;
+  transform: scale(1.3);
+}
+
+.duo:hover .regular {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=home.css.map */

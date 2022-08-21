@@ -1,0 +1,130 @@
+/* Box sizing rules */
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a {
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  padding: 0;
+}
+
+h2,
+h3,
+button,
+p,
+li,
+a {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+#footer-h3,
+main header #delice-des-sens h2 {
+  font-family: "Shrikhand";
+  font-weight: 500;
+}
+
+#list-operation {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#list-operation li span {
+  font-size: 13px;
+}
+
+#div-restaurant {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 20px;
+}
+
+#restaurant-section div > a {
+  height: 50vw;
+}
+
+.img {
+  height: 80%;
+}
+
+.fig {
+  height: 20%;
+}
+
+@media screen and (min-width: 750px) {
+  .fig {
+    padding: 10px 15px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .fig {
+    padding: 16px 20px;
+  }
+}
+header {
+  height: 70px;
+}
+header a {
+  display: flex;
+  align-items: center;
+}
+
+/*# sourceMappingURL=tablett.css.map */

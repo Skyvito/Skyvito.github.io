@@ -1,0 +1,38 @@
+#list-operation {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#list-operation li span {
+    font-size: 13px;
+}
+
+#div-restaurant {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 20px;
+}
+
+#restaurant-section div > a {
+    height: 50vw;
+}
+
+.img {
+    height: 80%;
+}
+
+.fig {
+    height: 20%;
+}
+
+@media screen and (min-width: 750px) {
+    .fig {
+        padding: 10px 15px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .fig {
+        padding: 16px 20px;
+    }
+}

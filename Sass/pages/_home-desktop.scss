@@ -1,0 +1,111 @@
+#restaurant-section {
+    padding: 0 80px 30px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+header h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+#restaurant-section div > a {
+    height: 35vw;
+}
+
+.fig {
+    padding: 2px 20px;
+}
+
+#restaurant-section {
+    padding: 0 200px 30px;
+}
+
+#restaurant-section div > a {
+    height: 25vw;
+}
+
+#list-operation li span {
+    font-size: 16px;
+}
+
+#list-operation li {
+    height: 60px;
+}
+
+.color {
+    padding: 30px 0 10px;
+}
+
+#h3-fonctionnement {
+    margin-top: 15px;
+}
+
+@media screen and (min-width: 1400px) {
+    .fig {
+        padding: 15px 20px;
+    }
+    #restaurant-section div > a {
+        height: 20vw;
+    }
+    #restaurant-section {
+        padding: 0 300px 30px;
+    }
+    .img {
+        height: 70%;
+    }
+    .fig {
+        height: 30%;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    #restaurant-section div > a {
+        height: 15vw;
+    }
+    #restaurant-section {
+        padding: 0px 500px 30px;
+    }
+}
+
+#restaurant-section h3 {
+    padding: 10px 0px 25px;
+}
+
+#restaurant-section {
+    background-color: rgb(251, 251, 251);
+}
+
+main {
+    background-color: rgb(251, 251, 251);
+}
+
+@media screen and (min-width: 1100px) {
+    .padding-border {
+        padding: 0 104px;
+    }
+}
+
+#ul-footer > li {
+    padding: 0px 10px 10px 10px;
+    font-size: 16px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+#ul-footer {
+    display: flex;
+    justify-content: center;
+}
+
+#footer-h3 {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+}
