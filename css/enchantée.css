@@ -493,7 +493,7 @@ main {
     white-space: nowrap;
     overflow: hidden;
   }
-  .bloc:hover .trois-point {
+  li:hover .trois-point {
     padding-right: 51px;
   }
 }

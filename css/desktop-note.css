@@ -268,7 +268,7 @@ main header #delice-des-sens h2 {
     width: 270px;
     overflow: hidden;
   }
-  .bloc:hover .trois-point {
+  li:hover .trois-point {
     padding-right: 36px;
   }
 }
