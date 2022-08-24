@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+}
+
+#ul-entrée {
+    list-style-type: none;
+    padding: 0 10px;
+    display: grid;
+    grid-template-rows: 20vw 20vw 20vw 20vw;
+    grid-row-gap: 10px;
+}
+
+ul#ul-entrée > li {
+    box-shadow: 0 5px 7px 0 #c9bfbf;
+    border-radius: 10px;
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    &:hover {
+        transform: scale(1.01);
+    }
+}
+
+.prix-entrée {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    margin: 0;
+}
+
+.validé {
+    width: 60px;
+    height: 100%;
+    background-color: #b6f9bd;
+    display: none;
+    position: absolute;
+    right: -100px;
+}
+
+#titre-entrée {
+    margin-bottom: 15px;
+    padding: 0 10px;
+    position: relative;
+}
+
+#titre-entrée::after {
+    content: "";
+    width: 41px;
+    height: 4px;
+    background: #6ee9cb;
+    display: block;
+}
+
+#titre-plats {
+    padding: 0 10px;
+    margin: 15px 0 15px;
+    position: relative;
+}
+
+#ul-plats {
+    list-style-type: none;
+    padding: 0 10px;
+    display: grid;
+    grid-template-rows: 20vw 20vw 20vw;
+    grid-row-gap: 10px;
+}
+
+ul#ul-plats > li {
+    box-shadow: 0 5px 7px 0 #c9bfbf;
+    border-radius: 10px;
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+    &:hover {
+        transform: scale(1.01);
+    }
+}
+
+.prix-plats {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    margin: 0;
+}
+
+#titre-dessert {
+    padding: 0 10px;
+    margin: 15px 0 15px;
+    position: relative;
+}
+
+#titre-dessert:after {
+    content: "";
+    width: 41px;
+    height: 4px;
+    background: #6ee9cb;
+    display: block;
+}
+
+#ul_dessert {
+    list-style-type: none;
+    padding: 0 10px;
+    display: grid;
+    grid-template-rows: 20vw 20vw 20vw;
+    grid-row-gap: 10px;
+    margin-bottom: 40px;
+}
+
+ul#ul_dessert > li {
+    box-shadow: 0 5px 7px 0 #c9bfbf;
+    border-radius: 10px;
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+    &:hover {
+        transform: scale(1.01);
+    }
+}
+
+.prix-dessert {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    margin: 0;
+}
+
+h3#titre-plats:after {
+    content: "";
+    width: 41px;
+    height: 4px;
+    background: #6ee9cb;
+    display: block;
+}
+
+h1 {
+    color: black;
+    font-size: 25px;
+}
+
+#background {
+    margin-top: -58px;
+    background-color: rgb(251 244 244);
+    border-radius: 20px 20px 0 0;
+    padding-top: 16px;
+    padding-bottom: 40px;
+}
+
+main {
+    position: relative;
+}
+
+#image-background {
+    height: 65vw;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 360px) {
+    .h4-entrée {
+        font-size: 14px;
+    }
+    .description-entrée {
+        font-size: 13px;
+    }
+    .prix-entrée {
+        font-size: 14px;
+    }
+    .h4-plats {
+        font-size: 14px;
+    }
+    .description-plats {
+        font-size: 13px;
+    }
+    .prix-plats {
+        font-size: 14px;
+    }
+    .h4-dessert {
+        font-size: 14px;
+    }
+    .description-dessert {
+        font-size: 13px;
+    }
+    .prix-dessert {
+        font-size: 14px;
+    }
+    .validé {
+        font-size: 14px;
+    }
+}
+
+.bloc {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+}
+
+@media screen and (max-width: 431px) {
+    .trois-point {
+        text-overflow: ellipsis;
+        width: 236px;
+        overflow: hidden;
+    }
+    .bloc {
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .bloc:hover .trois-point {
+        padding-right: 51px;
+    }
+}
+
+.desu {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.deu {
+    width: 158px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

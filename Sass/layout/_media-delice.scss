@@ -1,0 +1,30 @@
+@media screen and (max-width: 382px) {
+    .trois-point {
+        text-overflow: ellipsis;
+        width: 195px;
+        overflow: hidden;
+    }
+    .bloc {
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .bloc:hover .trois-point {
+        padding-right: 5px;
+    }
+}
+
+@media only screen and (min-width: 1038px) and (max-width: 1150px) {
+    .bloc {
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .roti {
+        text-overflow: ellipsis;
+        width: 250px;
+        overflow: hidden;
+    }
+    .bloc:hover .roti {
+        padding-right: 16px;
+    }
+}

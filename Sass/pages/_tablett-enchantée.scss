@@ -1,0 +1,21 @@
+#ul-entrée {
+    grid-template-rows: 10vw 10vw 10vw 10vw;
+}
+
+#image-background {
+    height: 35vh;
+}
+
+#ul-plats {
+    grid-template-rows: 10vw 10vw 10vw;
+}
+
+#ul_dessert {
+    grid-template-rows: 10vw 10vw 10vw;
+}
+
+@media screen and (min-width: 750px) and (max-width: 1038px) {
+    .bloc {
+        padding: 15px;
+    }
+}

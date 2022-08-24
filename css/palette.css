@@ -1,0 +1,30 @@
+@media screen and (max-width: 431px) {
+  .trois-point {
+    text-overflow: ellipsis;
+    width: 236px;
+    overflow: hidden;
+  }
+  .bloc {
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .bloc:hover .trois-point {
+    padding-right: 51px;
+  }
+}
+@media only screen and (min-width: 1038px) and (max-width: 1315px) {
+  .bloc {
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .trois-point {
+    text-overflow: ellipsis;
+    width: 270px;
+    overflow: hidden;
+  }
+  .bloc:hover .trois-point {
+    padding-right: 36px;
+  }
+}
+
+/*# sourceMappingURL=palette.css.map */
