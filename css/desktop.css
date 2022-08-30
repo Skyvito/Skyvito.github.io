@@ -206,8 +206,8 @@ main header #delice-des-sens h2 {
 @keyframes chargeur {
   0% {
     transform: rotate(0deg) scale(1);
-    border-top-color: red;
-    border-bottom-color: red;
+    border-top-color: #99e2d0;
+    border-bottom-color: #99e2d0;
   }
   25% {
     border-top-color: #9356dc;
@@ -224,8 +224,8 @@ main header #delice-des-sens h2 {
   }
   100% {
     transform: rotate(720deg) scale(0);
-    border-top-color: red;
-    border-bottom-color: red;
+    border-top-color: #9356d0;
+    border-bottom-color: #9356d0;
   }
 }
 .globality {
