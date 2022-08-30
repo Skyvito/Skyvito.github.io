@@ -6,7 +6,7 @@ body {
     list-style-type: none;
     padding: 0 10px;
     display: grid;
-    grid-template-rows: 20vw 20vw 20vw 20vw;
+    grid-template-rows: 22% 22% 22% 22%;
     grid-row-gap: 10px;
 }
 
@@ -62,7 +62,7 @@ ul#ul-entrée > li {
     list-style-type: none;
     padding: 0 10px;
     display: grid;
-    grid-template-rows: 20vw 20vw 20vw;
+    grid-template-rows: 30% 30% 30%;
     grid-row-gap: 10px;
 }
 
@@ -102,7 +102,7 @@ ul#ul-plats > li {
     list-style-type: none;
     padding: 0 10px;
     display: grid;
-    grid-template-rows: 20vw 20vw 20vw;
+    grid-template-rows: 30% 30% 30%;
     grid-row-gap: 10px;
     margin-bottom: 40px;
 }
